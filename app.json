@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "pia_application",
+    "slug": "pia_application",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/pia_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Android_icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.pia_application",
+      "googleServicesFile": "./android/app/google-services.json"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/pia_logo.png",
+      "notification": {
+        "vapidPublicKey": "BCrgIM2Q7vsLkl6OXPrre7p_wZzCN79dSbwYJx5zIHztDux10NJPxNiiIx43rGnAC_UnAW6Cg_9Ne5TacOZ3Ktk"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bd4364aa-f1ba-4eae-8375-a062a81d6863"
+      }
+    }
+  }
+}

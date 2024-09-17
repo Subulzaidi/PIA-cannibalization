@@ -1,0 +1,27 @@
+pluginManagement {
+    // No need for React Native-specific logic
+    // Remove any version checks or React Native specific plugins
+}
+
+plugins {
+    // No need to apply React Native plugins
+}
+
+rootProject.name = 'pia_application'
+
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        // Define your version catalogs here if needed
+        // This will be managed by Expo in most cases
+    }
+}
+
+// Apply Expo-specific scripts
+apply from: new File(["node", "--print", "require.resolve('expo/package.json')"].execute(null, rootDir).text.trim(), "../scripts/autolinking.gradle")
+
+// Use Expo modules configuration
+useExpoModules()
+
+// Include the app module
+include ':app'

@@ -1,0 +1,38 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        buildToolsVersion = findProperty('android.buildToolsVersion') ?: '34.0.0'
+        minSdkVersion = Integer.parseInt(findProperty('android.minSdkVersion') ?: '23')
+        compileSdkVersion = Integer.parseInt(findProperty('android.compileSdkVersion') ?: '34')
+        targetSdkVersion = Integer.parseInt(findProperty('android.targetSdkVersion') ?: '34')
+        kotlinVersion = findProperty('android.kotlinVersion') ?: '1.9.23'
+        ndkVersion = "26.1.10909125"
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.pkg.github.com/facebook/react-native' } // Corrected repository
+    }
+
+    // Classpath for Android and Kotlin build tools should be inside this block
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0'  // Correct usage of classpath
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.23'
+  
+    }
+}
+
+// Configuration common to all sub-projects/modules
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://jitpack.io' }
+        
+    }
+}

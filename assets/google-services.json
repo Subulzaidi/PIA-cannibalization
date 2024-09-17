@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "814009539294",
+    "firebase_url": "https://pia-application-e7674-default-rtdb.firebaseio.com",
+    "project_id": "pia-application-e7674",
+    "storage_bucket": "pia-application-e7674.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814009539294:android:d897b29d878583d5ee404f",
+        "android_client_info": {
+          "package_name": "com.anonymous.pia_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm-i7wilFlbpCQ1Apaj-cSqPwiYGcfDiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814009539294:android:2dcea6fbfd3e7a6dee404f",
+        "android_client_info": {
+          "package_name": "com.pia_airtrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm-i7wilFlbpCQ1Apaj-cSqPwiYGcfDiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
