@@ -7,6 +7,3 @@ node_modules/
 # Ignore Android build artifacts
 android/app/build/
 
-# Firebase credentials (if sensitive)
-assets/pia-application-e7674-firebase-adminsdk-f5ksx-c9104f50e1.json
-
